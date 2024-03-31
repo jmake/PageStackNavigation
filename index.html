@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SpicyTech</title>
+	<link rel="shortcut icon" href="favicon.ico">
+
+<!-- link rel="stylesheet" href="./assets/css/landio.min.css"-->
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr-custom.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/51/three.min.js'></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <link rel="stylesheet" type="text/css" href="css/chatbot.css" />
+  <script src="js/chatbot.js" defer></script>
+
+</head>
+
+<body>
+
+	<!-- navigation -->
+	<nav class="pages-nav">
+		<div class="pages-nav__item"><a class="link link--page" href="#page-custom">Home</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-info">Customization &amp; Settings</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-blog">Blog &amp; News</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-contact">Contact</a></div>
+		<div class="pages-nav__item pages-nav__item--social">
+			<a class="link link--social link--faded" href="#"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+			<a class="link link--social link--faded" href="#"><i class="fa fa-instagram"></i><span class="text-hidden">Facebook</span></a>
+			<a class="link link--social link--faded" href="#"><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+      <a class="link link--social link--faded" href="#"><i class="fa fa-git-square"></i><span class="text-hidden">GitHub</span></a>
+		</div>
+	</nav>
+	<!-- /navigation-->
+
+	<!-- pages stack -->
+	<div class="pages-stack">
+
+    <!-- /pagesX -->
+    <div class="page" id="page-custom">
+      <header class="bp-header cf">
+        <span class="bp-header__present">SpicyTech <span class="bp-tooltip bp-icon bp-icon--about" data-content="SpicyTech is an innovative technology company that has carved out a niche in the competitive tech industry by blending cutting-edge technological solutions with a zestful brand personality that resonates with both businesses and consumers. The company operates across several key tech domains, emphasizing creativity, efficiency, and user-centric design."></span></span>
+        <h1 class="bp-header__title">
+          HOME
+        </h1>
+        <p class="bp-header__desc">
+          Wellcome
+        </p>
+
+<!-- ChatBot -->
+    <button class="chatbot-toggler">
+      <span class="material-symbols-rounded">mode_comment</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
+
+    <div class="chatbot">
+      <header>
+        <h2>A.I. Support</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>Hi there 👋<br>How can I help you today?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+    </div>
+<!-- ChatBot -->
+
+<!-- Animation -->
+      <div id="scene3d"></div>
+<!-- Animation -->
+
+      </header>
+    </div>
+
+    <!-- /pagesX -->
+    <div class="page" id="page-info">
+      <header class="bp-header cf">
+        <h1 class="bp-header__title">Customization &amp; Settings</h1>
+        <p class="bp-header__desc"> 
+          <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Coming soon</a>
+        </p>
+        <p class="info">
+        </p>
+      </header>
+
+
+<!-- Sign up 
+    <section class="section-signup bg-light">
+      <div class="container">
+        <h3 class="text-center mb-5">Sign up to receive free updates as soon as they hit!</h3>
+        <form>
+          <div class="row">
+            <div class="col-md-6 col-xl-3">
+              <div class="form-group has-icon-left form-control-name">
+                <label class="sr-only" for="inputName">Your name</label>
+                <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Your name">
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div class="form-group has-icon-left form-control-email">
+                <label class="sr-only" for="inputEmail">Email address</label>
+                <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Email address" autocomplete="off">
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div class="form-group has-icon-left form-control-password">
+                <label class="sr-only" for="inputPassword">Enter a password</label>
+                <input type="password" class="form-control form-control-lg" id="inputPassword" placeholder="Enter a password" autocomplete="off">
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg btn-block btn-pill">Sign up for free!</button>
+              </div>
+            </div>
+          </div>
+          <label class="c-input c-checkbox">
+            <input type="checkbox" checked>
+            <span class="c-indicator"></span> I agree to Land.io’s <a href="#">terms of service</a>
+          </label>
+        </form>
+      </div>
+    </section>
+< Sign up -->
+
+
+    </div>
+
+
+<!-- /pageX 
+		<div class="page" id="page-info">
+			<header class="bp-header cf">
+				<span class="bp-header__present">SpicyTech <span class="bp-tooltip bp-icon bp-icon--about" data-content="SpicyTech is an innovative technology company that has carved out a niche in the competitive tech industry by blending cutting-edge technological solutions with a zestful brand personality that resonates with both businesses and consumers. The company operates across several key tech domains, emphasizing creativity, efficiency, and user-centric design."></span></span>
+				<h1 class="bp-header__title">
+          HOME
+        </h1>
+				<p class="bp-header__desc">
+          Wellcome
+        </p>
+				<nav class="bp-nav">
+					<a class="bp-nav__item bp-icon bp-icon--prev" href="http://" data-info="Link1"><span>Link1</span></a>
+					<a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="Link1b"><span>Next Blueprint</span></a>
+					<a class="bp-nav__item bp-icon bp-icon--drop" href="http://" data-info="Link2"><span>Link2</span></a>
+					<a class="bp-nav__item bp-icon bp-icon--archive" href="http://" data-info="Link3"><span>Link3</span></a>
+				</nav>
+			</header>
+			<img class="poster" src="images/1.jpg" alt="img01" />
+		</div>
+--> 
+<!-- /pageX 
+		<div class="page" id="page-doca">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Documentation</h1>
+				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+				<p class="info">
+					"We cannot have peace among men whose hearts find delight in killing any living creature." &mdash; Rachel Carson
+				</p>
+			</header>
+			<img class="poster" src="images/2.jpg" alt="img06" />
+		</div>
+-->
+
+	</div>
+
+	<!-- /pages-stack -->
+	<button class="menu-button"><span>Menu</span></button>
+	<script src="js/classie.js"></script>
+	<script src="js/main.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+
+<!--
+SEE : https://tympanus.net/codrops/2015/10/21/page-stack-navigation/
+-->
+</html>
